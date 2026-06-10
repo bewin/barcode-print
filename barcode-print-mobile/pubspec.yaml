@@ -1,0 +1,46 @@
+name: barcode_print_mobile
+description: 条码打印系统 - 移动端 (Android)
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # 数据库
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+
+  # 文件选择
+  file_picker: ^6.1.1
+
+  # PDF 渲染 + 页面转图片
+  syncfusion_flutter_pdf: ^24.1.41
+
+  # 条码检测（从图片中识别条码，用于索引建立）
+  google_mlkit_barcode_scanning: ^0.10.0
+
+  # 摄像头实时扫码
+  mobile_scanner: ^3.5.6
+
+  # 打印
+  printing: ^5.12.0          # Android PrintManager 打印
+  esc_pos_bluetooth: ^0.3.3  # 蓝牙 ESC/POS 打印
+
+  # 工具
+  intl: ^0.19.0
+  share_plus: ^7.2.1
+  permission_handler: ^11.2.0
+  path: ^1.8.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
