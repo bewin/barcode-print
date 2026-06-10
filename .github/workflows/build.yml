@@ -8,6 +8,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./barcode-print-mobile
+
     steps:
       - uses: actions/checkout@v4
       - name: Setup Flutter
@@ -23,4 +27,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: barcode-print-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: barcode-print-mobile/build/app/outputs/flutter-apk/app-release.apk
