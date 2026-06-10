@@ -29,7 +29,6 @@ dependencies:
 
   # 打印
   printing: ^5.12.0          # Android PrintManager 打印
-  esc_pos_bluetooth: ^0.3.3  # 蓝牙 ESC/POS 打印
 
   # 工具
   intl: ^0.19.0
